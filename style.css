@@ -1,5 +1,11 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: rgb(185, 21, 80);
+    background-color: rgb(185,21,80);
 }
 
 h1{
@@ -8,45 +14,73 @@ h1{
 }
 
 #dati{
-    border-radius: 20px;
-    background-color: white;
-    width: 1000px;
-    min-width: 800px;
-    margin: auto;
-}
-
-#msInput{
-    display: flex;
-    justify-content: space-around;
-}
-
-#msButtons{
-    display: flex;
-    justify-content: center;
-}
-
-#name, #km, #discountList{
-    padding: 5px;
+    padding: 50px;
     text-align: center;
-    font-size: 18px;
-    border:solid 1px red;
-    border-radius: 5px;
+    margin: auto;
+    background-color: white;
+    max-width: 1000px;
+    width: 800px;
+    
+    border-radius: 20px;
+}
+
+.form{
     margin-bottom: 50px;
 }
 
-.buttonStyle{
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(204, 204, 204);
-    color: rgb(185, 21, 80);
-    font-size: 18px;
-    font-weight: bold;
-    border: solid gray 1px;
+.ticket.active{
+    display: block;
 }
 
-.prova{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
+.ticket{
+    /*display: none;*/
+}
+
+button{
+    padding: 10px;
+    color: rgb(185,21,80);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid gray 1px;
+    margin: 0 10px;
+}
+
+.field{
+    padding: 10px;
+    border: solid red 1px;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+
+.ticket{
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    max-width: 1000px;
+    width: 800px;
+    border-radius: 20px;
+}
+
+.infoTicket{
+    height: 100px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+#passeggero, #tipoOfferta, #numCarrozza, #codiceCP, #costoBiglietto{
+    display: inline-block;
+    height: 100%;
+    
+}
+
+#passeggero{
+    height: 100%;
+    width: 35%;
+    background-color: rgb(128, 128, 128);
+}
+
+#tipoOfferta, #numCarrozza, #codiceCP, #costoBiglietto{
+    width: 15%;
+    height: 100%;
 }

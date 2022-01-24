@@ -8,58 +8,55 @@
     <title>Biglietto treno form</title>
 </head>
 <body>
-
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    
     <div id="dati">
-        <div class="prova">
-            <span>Nome Cognome</span>
-            <span>Km da percorrere</span>
-            <span>Fascia di età</span>
-        </div>
-        <div id="msInput">
-            <input id="name" type="text">
-            <input id="km" type="number">
-            <select name="" id="discountList">
+        <div class="form">
+            <input class="field" id="nome" type="text">
+            <input class="field" id="km" type="number" min="1" step="0.5">
+            <select class="field" name="eta" id="eta">
+                <option value="default" disabled selected hidden></option>
                 <option value="Minorenne">Minorenne</option>
-                <option value="Over 65">Over 65</option>
-                <option value="Adult">Adulto</option>
+                <option value="Adulto">Adulto</option>
+                <option value="over65">Over 65</option>
             </select>
-            
-        </div>
-            
-        <div id="msButtons">
-            <button class="buttonStyle" id="generate">Genera</button>
-            <button class="buttonStyle" id="annulla">Annulla</button>
         </div>
         
+        <button id="genera">Genera</button>
+        <button id="annulla">Annulla</button>
     </div>
 
-    <h1>IL TUO BIGLIETTO</h1>
+    <H1 id="tuoBiglietto">IL TUO BIGLIETTO</H1>
 
-    <div id="ticket">
-        <div id="nomePasseggero">
-            <h3>NOME PASSEGGERO</h3>
-        </div>
+    <div class="ticket" id="biglietto">
+        <h3>DETTAGLI PASSEGGERI</h3>
+        <div class="infoTicket">
+            
+            <div id="passeggero">
+                <h2>Nome passeggero</h2>
+            </div>
+            
+            <div id="tipoOfferta">
+                <p>Offerta</p>
+            </div>
 
-        <div id="tipoOfferta">
-            <h4>Offerta</h4>
-        </div>
+            <div id="numCarrozza">
+                <p>Carrozza</p>
+            </div>
 
-        <div id="numCarrozza">
-            <h4>Carrozza</h4>
-        </div>
+            <div id="codiceCP">
+                <p>Codice CP</p>
+            </div>
 
-        <div id="cpCode">
-            <h4>Codice CP</h4>
+            <div id="costoBiglietto">
+                <p>Costo biglietto</p>
+            </div>
         </div>
-
-        <div id="costo">
-            <h4>Costo biglietto</h4>
-        </div>
+        
+        
     </div>
 
     <!--Link al file JS-->
     <script type="text/javascript" src="main.js"></script>
+    
 </body>
 </html>
