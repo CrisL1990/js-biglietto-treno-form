@@ -54,7 +54,8 @@ genera.addEventListener('click',
             tipoOfferta.append(offerta);
             numCarrozza.append(carrozza);
             codiceCP.append(cpCode);
-            costoBiglietto.append(totale.toFixed(2)); 
+            costoBiglietto.innerHTML = `<div>` + `<p>Costo biglietto</p>` + totale.toFixed(2) + ` Euro` + `</div>`;
+            
             counter += 1;
             }
             
