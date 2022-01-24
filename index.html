@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biglietto treno form</title>
+</head>
+<body>
+
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    
+    <div id="dati">
+        <div class="prova">
+            <span>Nome Cognome</span>
+            <span>Km da percorrere</span>
+            <span>Fascia di età</span>
+        </div>
+        <div id="msInput">
+            <input id="name" type="text">
+            <input id="km" type="number">
+            <select name="" id="discountList">
+                <option value="Minorenne">Minorenne</option>
+                <option value="Over 65">Over 65</option>
+                <option value="Adult">Adulto</option>
+            </select>
+            
+        </div>
+            
+        <div id="msButtons">
+            <button class="buttonStyle" id="generate">Genera</button>
+            <button class="buttonStyle" id="annulla">Annulla</button>
+        </div>
+        
+    </div>
+
+    <h1>IL TUO BIGLIETTO</h1>
+
+    <div id="ticket">
+        <div id="nomePasseggero">
+            <h3>NOME PASSEGGERO</h3>
+        </div>
+
+        <div id="tipoOfferta">
+            <h4>Offerta</h4>
+        </div>
+
+        <div id="numCarrozza">
+            <h4>Carrozza</h4>
+        </div>
+
+        <div id="cpCode">
+            <h4>Codice CP</h4>
+        </div>
+
+        <div id="costo">
+            <h4>Costo biglietto</h4>
+        </div>
+    </div>
+
+    <!--Link al file JS-->
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

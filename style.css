@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(185, 21, 80);
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#dati{
+    border-radius: 20px;
+    background-color: white;
+    width: 1000px;
+    min-width: 800px;
+    margin: auto;
+}
+
+#msInput{
+    display: flex;
+    justify-content: space-around;
+}
+
+#msButtons{
+    display: flex;
+    justify-content: center;
+}
+
+#name, #km, #discountList{
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    border:solid 1px red;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.buttonStyle{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(204, 204, 204);
+    color: rgb(185, 21, 80);
+    font-size: 18px;
+    font-weight: bold;
+    border: solid gray 1px;
+}
+
+.prova{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
