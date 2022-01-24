@@ -6,8 +6,7 @@ const priceForKm = 0.21;
 const discount20 = 20;
 const discount40 = 40;
 
-//Prezzo totale del ticket
-let ticketPrice = km * priceForKm;
+
 
 //Contengono il totale dello sconto applicato e il totale al netto di eventuali sconti
 let total = 0;
@@ -24,12 +23,16 @@ let tipoOfferta = document.getElementById("tipoOfferta");
 let numCarrozza = document.getElementById("numCarrozza");
 let cpCode = document.getElementById("cpCode");
 let costo = document.getElementById("costo");
+let displayTicket = document.getElementsById("ticket")
 
 generate.addEventListener('click',
     function(){
 
+        //Prezzo totale del ticket
+        let ticketPrice = km * priceForKm;
+
         const name = document.getElementById("name").value;
-        const km = document.getElementById("km").value;
+        const km =  document.getElementById("km").value;
         const discountList = document.getElementById("discountList").value;
         
         if (discountList == "Minorenne"){
@@ -47,15 +50,18 @@ generate.addEventListener('click',
             total = ticketPrice
         }
 
+       
         nomePasseggero.append(name);
         tipoOfferta.append(offerta);
         numCarrozza.append(carrozza);
         cpCode.append(codiceCP);
         costo.append(total);
+        
 
     }
 
     
 )
+
 
 
